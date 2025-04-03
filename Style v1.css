@@ -1,3 +1,7 @@
+/* ===================================================================== */
+/* ==========         1. VARIABLES & RESET DE BASE             ========== */
+/* ===================================================================== */
+
 /* ========== VARIABLES CSS ========== */
 :root {
   --primary: #3a7bd5;
@@ -56,17 +60,19 @@ img {
   display: block;
 }
 
+/* ===================================================================== */
+/* ==========         2. HERO SECTION & NAVIGATION             ========== */
+/* ===================================================================== */
+
 /* ========== HERO SECTION ========== */
 .hero {
-  background: #f8f9fa; /* Blanc */
+  background: #f8f9fa; /* Couleur claire par défaut */
   padding: 60px 20px;
   text-align: center;
   border-radius: 12px;
   margin-bottom: 40px;
   position: relative;
   overflow: hidden;
-}
-  text-align: center;
 }
 
 .hero-content {
@@ -173,7 +179,10 @@ img {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* ========== SECTIONS ========== */
+/* ===================================================================== */
+/* ==========         3. SECTIONS GÉNÉRALES & TITRES           ========== */
+/* ===================================================================== */
+
 .section {
   background: white;
   border-radius: var(--border-radius);
@@ -221,7 +230,24 @@ img {
   letter-spacing: -0.45px;
 }
 
-/* ========== TIP & WARNING BOXES ========== */
+/* Boîte de contenu simple (ex: "content-block") */
+.content-block {
+  margin-bottom: 30px;
+}
+
+/* Sous-titres (ex: "Comment intégrer ces jouets…") */
+.subsection-title {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin: 30px 0 15px;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* ===================================================================== */
+/* ==========         4. TIP & WARNING BOXES + BADGES          ========== */
+/* ===================================================================== */
+
 .tip-box {
   background-color: #e8f4fd;
   border-left: 4px solid var(--info);
@@ -268,7 +294,7 @@ img {
   content: "⚠️";
 }
 
-/* ========== BEST LABEL ========== */
+/* Label "★" automatique pour "best" */
 .best::after {
   content: "★";
   color: var(--secondary);
@@ -277,7 +303,11 @@ img {
   font-size: 1.1em;
 }
 
-/* ========== GRID & CARDS ========== */
+/* ===================================================================== */
+/* ==========         5. GRID, CARDS & STRUCTURES             ========== */
+/* ===================================================================== */
+
+/* Grille de choix (ex: .grid-choices) */
 .grid-choices {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -324,7 +354,7 @@ img {
   font-size: 1.3rem;
 }
 
-/* ========== FEATURE CARDS ========== */
+/* Feature cards (ex: .feature-card) */
 .feature-card {
   background: white;
   padding: 25px;
@@ -359,12 +389,107 @@ img {
   border-radius: 8px;
   text-align: center;
 }
-
 .feature-mini-card strong {
   color: var(--primary);
 }
 
-/* ========== PROCESS STEPS ========== */
+/* ===================================================================== */
+/* ========== 6. NOUVELLES CLASSES POUR SUPPRIMER L’INLINE    ========== */
+/* ===================================================================== */
+
+/* --- 1. Card avec overflow hidden si besoin --- */
+.feature-card--overflow {
+  overflow: hidden;
+}
+
+/* --- 2. Badge absolu en haut à droite --- */
+.card-badge-absolute {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--primary);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* --- 3. Image en haut de la card --- */
+.feature-card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--secondary);
+  display: block;
+}
+
+/* --- 4. Conteneur interne de la card (padding) --- */
+.feature-card-body {
+  padding: 20px;
+}
+
+/* --- 5. Petit bloc style "capteur / mode veille" --- */
+.feature-mini-box {
+  background: #e8f4fd;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* --- 6. Titre + icône dans la card (ex. "Stimulation Cognitive") --- */
+.feature-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.feature-card-icon-circle {
+  width: 40px;
+  height: 40px;
+  background: var(--secondary);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-card-title {
+  margin: 0;
+  color: var(--primary);
+}
+
+/* --- 7. Liste personnalisée avec puce "▸" en absolu --- */
+.custom-list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.custom-list li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 25px;
+}
+.custom-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--secondary);
+}
+
+/* --- 8. Petit bloc "Le saviez-vous ?" (feature-facts) --- */
+.feature-facts {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* ===================================================================== */
+/* ==========         7. PROCESS STEPS & FAQ SECTIONS          ========== */
+/* ===================================================================== */
+
 .process-steps {
   counter-reset: step;
   margin: 30px 0;
@@ -375,7 +500,6 @@ img {
   padding-left: 60px;
   margin-bottom: 30px;
 }
-
 .step::before {
   counter-increment: step;
   content: counter(step);
@@ -392,6 +516,18 @@ img {
   justify-content: center;
   font-weight: bold;
 }
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
 
 .step-title {
   font-weight: 600;
@@ -399,7 +535,7 @@ img {
   margin-bottom: 10px;
 }
 
-/* ========== FAQ ========== */
+/* FAQ container & items */
 .faq-container {
   margin-top: 50px;
 }
@@ -435,7 +571,10 @@ img {
   max-height: 1000px;
 }
 
-/* ========== PRODUCT COMPARISON ========== */
+/* ===================================================================== */
+/* ==========         8. TABLES DE COMPARAISON & CARTES        ========== */
+/* ===================================================================== */
+
 .product-comparison {
   width: 100%;
   border-collapse: collapse;
@@ -472,7 +611,6 @@ img {
   color: #e67e22;
 }
 
-/* ========== PRODUCT CARDS ========== */
 .product-card {
   background: white;
   border-radius: 16px;
@@ -592,14 +730,14 @@ img {
   transform: translateY(-2px);
 }
 
-/* ========== BADGE COLORS ========== */
+/* BADGE COLORS */
 .badge-ideal-cat { background: #27ae60; }
 .badge-best-price { background: #e67e22; }
 .badge-long-battery { background: #3498db; }
 .badge-high-tech { background: #8e44ad; }
 .badge-versatile { background: #16a085; }
 
-/* ========== IMAGE STYLES ========== */
+/* ========== IMAGE STYLES & UTILS ========== */
 .hero-image-container {
   display: flex;
   flex-wrap: wrap;
@@ -610,17 +748,11 @@ img {
   gap: 40px;
 }
 
-.hero-text-part {
-  flex: 1;
-  min-width: 300px;
-  padding: 20px;
-  z-index: 2;
-}
-
+.hero-text-part, 
 .hero-image-part {
   flex: 1;
   min-width: 300px;
-  max-width: 500px;
+  padding: 20px;
   z-index: 2;
 }
 
@@ -680,14 +812,9 @@ img {
   object-fit: cover;
 }
 
-/* ========== UTILITY CLASSES ========== */
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
-}
-
-.content-block {
-  margin-bottom: 30px;
 }
 
 .image-caption {
@@ -707,7 +834,9 @@ img {
   margin-top: 30px;
 }
 
-/* ========== RESPONSIVE ========== */
+/* ===================================================================== */
+/* ==========         9. VERSION RESPONSIVE "MOBILE"          ========== */
+/* ===================================================================== */
 @media (max-width: 768px) {
   .hero {
     padding: 60px 20px;
@@ -722,10 +851,14 @@ img {
     font-size: 1.1rem;
   }
   
+  /* Moins de padding dans .section pour éviter le décalage sur mobile */
   .section {
-    padding: 35px 25px 35px 45px;
+    padding: 25px 20px;
+    /* On réduit l'écart pour rester bien centré, 
+       au lieu de "35px 25px 35px 45px" */
   }
   
+  /* On réduit aussi la taille du cercle numéroté un peu moins décalé */
   .section::before {
     width: 40px;
     height: 40px;
@@ -777,7 +910,10 @@ img {
   }
 }
 
-/* ========== FALLBACKS & SUPPORT ========== */
+/* ===================================================================== */
+/* ==========         10. FALLBACKS & SAFARI SUPPORT          ========== */
+/* ===================================================================== */
+
 @supports (-webkit-touch-callout: none) {
   /* Safari specific styles */
   .hero {
