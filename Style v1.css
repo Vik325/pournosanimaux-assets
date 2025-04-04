@@ -486,11 +486,14 @@ img {
   font-size: 0.9rem;
 }
 /* --- 3. Mini-cartes bleues à l'intérieur des feature-cards --- */
+/* --- Encadrés bleus pour les statistiques --- */
 .feature-facts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 12px;
   margin-top: 20px;
+  margin-left: auto;  /* centre le conteneur */
+  margin-right: auto; /* centre le conteneur */
 }
 
 .feature-fact-box {
@@ -498,12 +501,15 @@ img {
   padding: 15px;
   border-radius: 8px;
   text-align: center;
+  margin: 0 auto;  /* centre chaque boîte */
 }
 
 .feature-fact-box strong {
   color: var(--primary);
   display: block;
   margin-bottom: 5px;
+}
+
 }
 /* --- 2. Badge absolu en haut à droite --- */
 .card-badge-absolute {
