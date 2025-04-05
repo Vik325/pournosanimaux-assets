@@ -1,0 +1,142 @@
+﻿/* ===================================================================== */
+/* ==========  SECTION 3 - COMPARATIF 2025 - STYLES UNIQUES  ========== */
+/* ===================================================================== */
+
+
+/* ---------- 1. Bloc méthodologie ---------- */
+.s3-methodology-block {
+  border-left: 5px solid var(--primary);
+  background: #f0f8ff;
+}
+
+
+/* ---------- 2. Grille des critères de test ---------- */
+.s3-criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+
+.s3-criteria-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+.s3-criteria-icon {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+
+.s3-criteria-title {
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+/* ---------- 3. Tableau comparatif ---------- */
+.s3-comparison-container {
+  overflow-x: auto;
+  background: white;
+  min-width: 900px;
+  box-shadow: var(--box-shadow);
+}
+
+
+.s3-comparison-table th:first-child {
+  border-radius: 8px 0 0 0 !important;
+}
+
+
+.s3-comparison-table th:last-child {
+  border-radius: 0 8px 0 0 !important;
+}
+
+
+.s3-comparison-img {
+  width: 80px;
+  border-radius: 8px;
+}
+
+
+.s3-price-discount {
+  color: #888;
+  font-size: 0.9em;
+}
+
+
+/* ---------- 4. Fiches produits ---------- */
+.s3-product-card .product-card-image-container {
+  height: 240px;
+}
+
+
+.s3-product-badge {
+  border-radius: 50px;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+}
+
+
+.s3-product-rating {
+  background: rgba(255,255,255,0.9);
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+
+/* Couleurs spécifiques */
+.s3-badge-ideal { background: #27ae60; }
+.s3-badge-budget { background: #e67e22; }
+.s3-badge-autonomy { background: #3498db; }
+.s3-badge-tech { background: #8e44ad; }
+.s3-badge-allround { background: #16a085; }
+
+
+/* ---------- 5. Profils recommandations ---------- */
+.s3-profile-card {
+  border-left: 4px solid var(--primary);
+  background: #f8f9fa;
+}
+
+
+/* ---------- 6. Témoignages ---------- */
+.s3-testimonial-card {
+  min-width: 300px;
+  background: white;
+}
+
+
+.s3-testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+/* ---------- 7. Responsive spécifique ---------- */
+@media (max-width: 768px) {
+  .s3-criteria-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .s3-comparison-container {
+    padding: 15px;
+  }
+  
+  .s3-product-card .product-card-image-container {
+    height: 200px;
+  }
+  
+  .s3-testimonial-card {
+    min-width: 100%;
+  }
+}
