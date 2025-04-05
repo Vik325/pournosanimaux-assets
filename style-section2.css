@@ -1,6 +1,9 @@
 ﻿/* ========================================================= */
 /* =      CLASSES SPÉCIFIQUES POUR LA SECTION 2   = */
 /* ========================================================= */
+﻿/* ========================================================= */
+/* =      CLASSES SPÉCIFIQUES POUR LA SECTION 2   = */
+/* ========================================================= */
 
 
 /* ---- 1. Intro block (fond bleu clair, padding 25, etc.) ---- */
@@ -245,197 +248,18 @@
   font-weight: bold;
   margin-bottom: 15px;
 }
-/* ========================================================= */
-/* SECTION 2 : CLASSES SPÉCIFIQUES - Jouets Connectés        */
-/* ========================================================= */
 
-/* -- Intro block (fond bleu, margin-bottom, etc.) -- */
-.sec2-intro-block {
-  background: #f0f7ff; 
-  padding: 25px;
-  border-radius: var(--border-radius);
+.sec2-scroll-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
+/* ================ BOUTON "VOIR LE COMPARATIF" ================= */
 
-/* .sec2-mb-30 et .sec2-mb-40 sont des utilitaires de margin-bottom */
-.sec2-mb-30 { margin-bottom: 30px; }
-.sec2-mb-40 { margin-bottom: 40px; }
-
-/* Titre intro (🔍) */
-.sec2-intro-title {
-  color: var(--primary);
-  margin-top: 0; 
-  display: flex; 
-  align-items: center; 
-  gap: 10px; 
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-.sec2-intro-icon { 
-  font-size: 1.2em; 
-}
-
-/* Disposition 2 colonnes flexible (texte à gauche, image à droite) */
-.sec2-flex-intro {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-}
-.sec2-col-left {
-  flex: 2; 
-  min-width: 300px;
-}
-.sec2-col-right {
-  flex: 1; 
-  min-width: 250px; 
-  text-align: center;
-}
-.sec2-img-intro {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-/* -- Subsection container (margin-bottom, etc.) -- */
-.sec2-subsection {
-  margin-bottom: 40px;
-}
-
-/* -- Flex row (capteurs, IA) -- */
-.sec2-flex-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-  margin: 25px 0;
-}
-.sec2-col-text {
-  flex: 1; 
-  min-width: 300px;
-}
-.sec2-col-img {
-  flex: 1; 
-  min-width: 300px; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center;
-}
-
-/* Image card style (3e photo IA, etc.) */
-.sec2-img-card {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: var(--box-shadow);
-  margin-bottom: 15px;
-}
-.sec2-img-caption {
-  text-align: center;
-  font-style: italic;
-  color: #666;
-  margin: 0;
-}
-
-/* -- Bloque IA style "Adaptation comportementale" -- */
-.sec2-ia-block {
-  background: #e8f4fd;
-  padding: 20px;
-  border-radius: var(--border-radius);
-  margin: 15px 0;
-}
-.sec2-ia-title {
-  font-weight: bold;
-  color: var(--info);
-  margin-bottom: 10px;
-}
-
-/* -- Grille 3 colonnes (connectivité) -- */
-.sec2-grid-3col {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 20px;
-  margin: 25px 0;
-}
-
-/* Cartes connectivité (Bluetooth/WiFi/4G) */
-.sec2-tech-card {
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: var(--border-radius);
-  border-left: 4px solid var(--secondary);
-}
-.sec2-tech-card-header {
-  font-weight: bold; 
-  color: var(--primary);
-  margin-bottom: 10px; 
-  display: flex; 
-  align-items: center; 
-  gap: 10px;
-}
-.sec2-tech-icon { 
-  font-size: 1.2rem; 
-}
-
-/* Warning box orange (interférences) */
-.sec2-warning-box {
-  background-color: #fff3e0; 
-  border-left: 4px solid var(--warning);
-  padding: 20px; 
-  margin: 25px 0; 
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
-}
-.sec2-warning-title {
-  font-weight: 600; 
-  margin-bottom: 10px; 
-  display: flex; 
-  align-items: center; 
-  color: var(--warning);
-  font-size: 1.1rem;
-}
-
-/* -- Grille 4 colonnes (sécurité) -- */
-.sec2-grid-4col {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 15px;
-  margin: 25px 0;
-}
-
-/* Icon card (🔄, 🔋, etc.) */
-.sec2-icon-card {
-  text-align: center;
-  padding: 15px;
-  background: #f8f9fa;
-  border-radius: var(--border-radius);
-}
-.sec2-icon-card-emoji {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-.sec2-icon-card-title {
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-
-/* -- Bloc "ce qu'il faut retenir" -- */
-.sec2-recap-block {
-  background: #f8f8f8;
-  padding: 20px;
-  border-left: 4px solid var(--primary);
-  border-radius: var(--border-radius);
-  margin: 40px 0;
-}
-.sec2-recap-title {
-  margin-top: 0; 
-  color: var(--primary);
-  font-size: 1.2rem; 
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-/* -- Bouton scroll vers comparatif -- */
 .btn-container {
   text-align: center;
   margin: 30px 0;
 }
+
 .sec2-scroll-btn {
   display: inline-block;
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
