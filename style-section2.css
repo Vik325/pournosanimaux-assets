@@ -327,3 +327,59 @@
   line-height: 1.4;
   margin: 0;
 }
+@media screen and (max-width: 480px) {
+  
+  /* Grille d’intro (texte + image) */
+  .sec2-flex-intro {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sec2-col-left,
+  .sec2-col-right {
+    width: 100%;
+    min-width: unset;
+  }
+
+  /* Flex row pour IA, capteurs, etc. */
+  .sec2-flex-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sec2-col-text,
+  .sec2-col-img,
+  .sec2-img-wrapper {
+    width: 100%;
+    min-width: unset;
+  }
+
+  /* Grilles connectivité et sécurité */
+  .sec2-grid-3col,
+  .sec2-grid-4col {
+    grid-template-columns: 1fr;
+  }
+
+  /* Bouton scroll comparatif */
+  .sec2-scroll-btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Tip-box et warning-box : éviter débordements */
+  .tip-box,
+  .warning-box,
+  .sec2-warning-box {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Réduction légères de tailles si besoin */
+  .sec2-img-caption {
+    font-size: 0.85rem;
+    padding: 0 10px;
+  }
+
+}
