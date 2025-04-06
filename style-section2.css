@@ -300,3 +300,30 @@
   margin-left: auto;
   margin-right: auto;
 }
+/* === Bloc image IA fidèle au modèle des colliers === */
+.sec2-img-wrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Image IA (hauteur naturelle, pas étirée de force) */
+.sec2-img-card {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 15px;
+  height: auto; /* important pour garder le comportement naturel du modèle */
+}
+
+/* Légende sous l’image */
+.sec2-img-caption {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
