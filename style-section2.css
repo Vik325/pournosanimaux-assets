@@ -253,13 +253,17 @@
   transform: translateY(-3px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
-/* ================ BOUTON "VOIR LE COMPARATIF" ================= */
+/* ========================================================= */
+/* = Section 2 - Correctifs Bouton & Image 3                */
+/* ========================================================= */
 
+/* Bouton container - centré, marge. */
 .btn-container {
   text-align: center;
-  margin: 30px 0;
+  margin: 40px 0; /* Ajuste si tu veux plus/moins d'espace */
 }
 
+/* Bouton scroll vers #comparatif */
 .sec2-scroll-btn {
   display: inline-block;
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -276,4 +280,23 @@
 .sec2-scroll-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Forcer la 3ᵉ image à s’étendre plus horizontalement */
+.sec2-col-img-wide {
+  flex: 2; /* Au lieu de flex:1; => colonne plus large */
+  min-width: 400px; /* tu peux mettre 500px si tu veux la forcer encore plus large */
+}
+
+/* Légende plus “SEO-friendly” */
+.sec2-seo-caption {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem; /* un peu plus grand que 0.9rem si tu souhaites */
+  line-height: 1.4;
+  max-width: 500px; /* pour éviter que le texte ne soit trop large */
+  margin-left: auto;
+  margin-right: auto;
 }
