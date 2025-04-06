@@ -7,7 +7,7 @@
 
 
 /* ---- 1. Intro block (fond bleu clair, padding 25, etc.) ---- */
-.sec2-intro-block {
+.section .sec2-intro-block {
   background: #f0f7ff !important;
   padding: 25px;
   border-radius: var(--border-radius);
