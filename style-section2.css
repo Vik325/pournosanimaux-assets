@@ -7,11 +7,12 @@
 
 
 /* ---- 1. Intro block (fond bleu clair, padding 25, etc.) ---- */
-.section .sec2-intro-block {
+.sec2-intro-block,
+article.sec2-intro-block {
   background: #f0f7ff !important;
   padding: 25px;
   border-radius: var(--border-radius);
-  margin-bottom: 30px; /* ex: tu peux ajuster */
+  margin-bottom: 30px;
 }
 
 
