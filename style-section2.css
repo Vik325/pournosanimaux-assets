@@ -328,6 +328,10 @@ article.sec2-intro-block {
   line-height: 1.4;
   margin: 0;
 }
+section#technologies .sec2-intro-block.sec2-mb-30 {
+  background-color: #f0f7ff !important;
+}
+
 @media screen and (max-width: 480px) {
   
   /* Grille d’intro (texte + image) */
@@ -382,5 +386,3 @@ article.sec2-intro-block {
     font-size: 0.85rem;
     padding: 0 10px;
   }
-
-}
