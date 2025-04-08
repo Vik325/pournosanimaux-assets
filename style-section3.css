@@ -98,8 +98,42 @@
 .s3-badge-autonomy { background: #3498db; }
 .s3-badge-tech { background: #8e44ad; }
 .s3-badge-allround { background: #16a085; }
+/* Nouveaux badges spécifiques */
+.s3-badge-cat { background: #8e44ad; } /* Pour les jouets chats */
+.s3-badge-dog { background: #3498db; } /* Pour les jouets chiens */
+.s3-badge-interactive { background: #e67e22; } /* Jouets interactifs */
+.s3-badge-camera { background: #2c3e50; } /* Pour les caméras */
+/* Version améliorée des fiches produits */
+.s3-product-card-enhanced {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
+.s3-product-card-enhanced:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
 
+.s3-product-feature-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.s3-product-feature-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+.s3-product-feature-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--success);
+  font-weight: bold;
+}
 /* ---------- 5. Profils recommandations ---------- */
 .s3-profile-card {
   border-left: 4px solid var(--primary);
@@ -121,7 +155,28 @@
   overflow: hidden;
 }
 
+/* Amélioration des témoignages */
+.s3-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
 
+.s3-testimonial-content {
+  font-style: italic;
+  position: relative;
+  padding-left: 20px;
+}
+
+.s3-testimonial-content::before {
+  content: """;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 2rem;
+  color: var(--secondary);
+  opacity: 0.3;
+}
 /* ---------- 7. Responsive spécifique ---------- */
 @media (max-width: 768px) {
   .s3-criteria-grid {
