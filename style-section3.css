@@ -185,7 +185,196 @@
 .product-card-badge {
   font-size: 0.8rem;
 }
+/* ============================================= */
+/* RECOMMANDATIONS - Identique section colliers */
+/* ============================================= */
 
+.recommendations-2025 {
+  margin: 60px 0 40px;
+}
+
+.recommendations-2025 .subsection-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.recommendations-2025 .subsection-title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a89dc, #8e44ad);
+}
+
+.recommendation-grid-2025 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.recommendation-card-2025 {
+  background: #f8f9fa;
+  border-left: 4px solid #4a89dc;
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+}
+
+.recommendation-card-2025:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.recommendation-card-2025 .choice-icon {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #4a89dc;
+}
+
+.recommendation-card-2025 h4 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.recommendation-card-2025 p {
+  color: #6c757d;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.recommendation-card-2025 .btn-small {
+  background: linear-gradient(135deg, #4a89dc, #5a9de9);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.recommendation-card-2025 .btn-small:hover {
+  background: linear-gradient(135deg, #3a79cc, #4a8ddd);
+  box-shadow: 0 5px 15px rgba(74, 137, 220, 0.3);
+}
+
+/* ============================================= */
+/* TÉMOIGNAGES - Identique section colliers */
+/* ============================================= */
+
+.testimonials-2025 {
+  margin: 60px 0;
+}
+
+.testimonials-2025 .subsection-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.testimonials-2025 .subsection-title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a89dc, #8e44ad);
+}
+
+.testimonial-grid-2025 {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #4a89dc #f1f1f1;
+}
+
+.testimonial-grid-2025::-webkit-scrollbar {
+  height: 6px;
+}
+
+.testimonial-grid-2025::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.testimonial-grid-2025::-webkit-scrollbar-thumb {
+  background: #4a89dc;
+  border-radius: 10px;
+}
+
+.testimonial-card-2025 {
+  min-width: 320px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.testimonial-card-2025 .user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.testimonial-card-2025 .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.testimonial-card-2025 .user-name {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 3px;
+}
+
+.testimonial-card-2025 .user-desc {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.testimonial-card-2025 .rating-stars {
+  color: #f1c40f;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.testimonial-card-2025 .testimonial-text {
+  color: #34495e;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.testimonial-card-2025 .testimonial-text:before {
+  content: """;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  font-size: 2rem;
+  color: #bdc3c7;
+  font-family: serif;
+  line-height: 1;
+}
 @media (max-width: 768px) {
   .feature-grid {
     grid-template-columns: 1fr;
