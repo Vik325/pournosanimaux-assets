@@ -177,6 +177,20 @@
   color: var(--secondary);
   opacity: 0.3;
 }
+.s3-criteria-desc {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.product-card-badge {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* ---------- 7. Responsive spécifique ---------- */
 @media (max-width: 768px) {
   .s3-criteria-grid {
