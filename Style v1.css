@@ -459,7 +459,7 @@ img {
   justify-content: center;
 }
 .feature-card-title {
-  margin: 0;
+  margin: 18px;
   color: var(--primary);
 }
 
