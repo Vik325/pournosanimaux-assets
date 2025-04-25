@@ -15,7 +15,7 @@
     .pna-img-container {
       flex: 0 0 280px;
       height: auto;
-      max-height: 320px;
+      max-height: 400px;
       overflow: hidden;
       border-radius: 12px;
     }
