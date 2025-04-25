@@ -125,6 +125,10 @@ img {
   border: 5px solid white;
   display: block;
 }
+/* Effet de zoom au survol */
+.hero-image:hover {
+  transform: scale(1.05);
+}
 
 .hero-cta {
   background: white;
