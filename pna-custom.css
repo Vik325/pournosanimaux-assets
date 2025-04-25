@@ -1,7 +1,7 @@
 /* ========== DISPOSITION HORIZONTALE ========== */
 .pna-horizontal-card {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 30px;
   padding: 25px;
   background: white;
