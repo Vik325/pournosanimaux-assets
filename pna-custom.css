@@ -27,7 +27,11 @@
       display: block;
       padding: 0;
       border-radius: 12px;
+      transition: transform 0.3s ease;
     }
+.pna-img-container img:hover {
+  transform: scale(1.05);
+}
 /* Contenu texte */
 .pna-card-content {
   flex: 1;
