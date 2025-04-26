@@ -83,8 +83,8 @@
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),
               url('https://assets.zyrosite.com/d957walzxvH4OnkN/chatgpt-image-27-mars-2025-02_00_29-YZ98lW5O41U9D2p5.png') center center/cover no-repeat;
   height: 80vh;
-  min-height: 500px;
-  max-height: 800px;
+  min-height: 300px;
+  max-height: 550px;
   display: flex;
   align-items: center;
   justify-content: center;
