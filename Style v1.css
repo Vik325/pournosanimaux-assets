@@ -131,22 +131,26 @@ img {
 }
 
 .hero-cta {
-  background: white;
-  color: var(--primary);
-  padding: 16px 45px;
-  border-radius: 50px;
+  background: white; /* Fond blanc */
+  color: #3498db; /* Texte bleu clair */
+  border: 2px solid #3498db; /* Bordure bleu clair */
+  padding: 12px 24px;
+  border-radius: 50px; /* Bords arrondis */
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 700;
-  display: inline-block;
-  transition: var(--transition);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   font-size: 1.1rem;
+  display: inline-block;
   margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Légère ombre douce */
 }
 
 .hero-cta:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  background: #ecf5fd; /* Fond bleu très clair au hover */
+  color: #2980b9; /* Texte bleu plus soutenu */
+  border-color: #2980b9; /* Bordure bleu plus soutenue */
+  transform: translateY(-2px); /* Effet petit rebond au survol */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Ombre plus marquée au hover */
 }
 
 /* ========== NAVIGATION ========== */
