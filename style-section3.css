@@ -1,0 +1,400 @@
+﻿/* ===================================================================== */
+/* ==========  SECTION 3 - COMPARATIF 2025 - STYLES UNIQUES  ========== */
+/* ===================================================================== */
+
+
+/* ---------- 1. Bloc méthodologie ---------- */
+.s3-methodology-block {
+  border-left: 5px solid var(--primary);
+  background: #f0f8ff;
+}
+
+
+/* ---------- 2. Grille des critères de test ---------- */
+.s3-criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+
+.s3-criteria-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+.s3-criteria-icon {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+
+.s3-criteria-title {
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+/* ---------- 3. Tableau comparatif ---------- */
+.s3-comparison-container {
+  overflow-x: auto;
+  background: white;
+  min-width: 900px;
+  box-shadow: var(--box-shadow);
+}
+
+
+.s3-comparison-table th:first-child {
+  border-radius: 8px 0 0 0 !important;
+}
+
+
+.s3-comparison-table th:last-child {
+  border-radius: 0 8px 0 0 !important;
+}
+
+
+.s3-comparison-img {
+  width: 80px;
+  border-radius: 8px;
+}
+
+
+.s3-price-discount {
+  color: #888;
+  font-size: 0.9em;
+}
+
+
+/* ---------- 4. Fiches produits ---------- */
+.s3-product-card .product-card-image-container {
+  height: 240px;
+}
+
+
+.s3-product-badge {
+  border-radius: 50px;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+}
+
+
+.s3-product-rating {
+  background: rgba(255,255,255,0.9);
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+
+/* Couleurs spécifiques */
+.s3-badge-ideal { background: #27ae60; }
+.s3-badge-budget { background: #e67e22; }
+.s3-badge-autonomy { background: #3498db; }
+.s3-badge-tech { background: #8e44ad; }
+.s3-badge-allround { background: #16a085; }
+/* Nouveaux badges spécifiques */
+.s3-badge-cat { background: #8e44ad; } /* Pour les jouets chats */
+.s3-badge-dog { background: #3498db; } /* Pour les jouets chiens */
+.s3-badge-interactive { background: #e67e22; } /* Jouets interactifs */
+.s3-badge-camera { background: #2c3e50; } /* Pour les caméras */
+/* Version améliorée des fiches produits */
+.s3-product-card-enhanced {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.s3-product-card-enhanced:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.s3-product-feature-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.s3-product-feature-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+.s3-product-feature-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--success);
+  font-weight: bold;
+}
+/* ---------- 5. Profils recommandations ---------- */
+.s3-profile-card {
+  border-left: 4px solid var(--primary);
+  background: #f8f9fa;
+}
+
+
+/* ---------- 6. Témoignages ---------- */
+.s3-testimonial-card {
+  min-width: 300px;
+  background: white;
+}
+
+
+.s3-testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Amélioration des témoignages */
+.s3-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.s3-testimonial-content {
+  font-style: italic;
+  position: relative;
+  padding-left: 20px;
+}
+
+.s3-testimonial-content::before {
+  content: """;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 2rem;
+  color: var(--secondary);
+  opacity: 0.3;
+}
+.s3-criteria-desc {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.product-card-badge {
+  font-size: 0.8rem;
+}
+/* ============================================= */
+/* RECOMMANDATIONS - Identique section colliers */
+/* ============================================= */
+
+.recommendations-2025 {
+  margin: 60px 0 40px;
+}
+
+.recommendations-2025 .subsection-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.recommendations-2025 .subsection-title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a89dc, #8e44ad);
+}
+
+.recommendation-grid-2025 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.recommendation-card-2025 {
+  background: #f8f9fa;
+  border-left: 4px solid #4a89dc;
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+}
+
+.recommendation-card-2025:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.recommendation-card-2025 .choice-icon {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #4a89dc;
+}
+
+.recommendation-card-2025 h4 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.recommendation-card-2025 p {
+  color: #6c757d;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.recommendation-card-2025 .btn-small {
+  background: linear-gradient(135deg, #4a89dc, #5a9de9);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.recommendation-card-2025 .btn-small:hover {
+  background: linear-gradient(135deg, #3a79cc, #4a8ddd);
+  box-shadow: 0 5px 15px rgba(74, 137, 220, 0.3);
+}
+
+/* ============================================= */
+/* TÉMOIGNAGES - Identique section colliers */
+/* ============================================= */
+
+.testimonials-2025 {
+  margin: 60px 0;
+}
+
+.testimonials-2025 .subsection-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.testimonials-2025 .subsection-title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a89dc, #8e44ad);
+}
+
+.testimonial-grid-2025 {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #4a89dc #f1f1f1;
+}
+
+.testimonial-grid-2025::-webkit-scrollbar {
+  height: 6px;
+}
+
+.testimonial-grid-2025::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.testimonial-grid-2025::-webkit-scrollbar-thumb {
+  background: #4a89dc;
+  border-radius: 10px;
+}
+
+.testimonial-card-2025 {
+  min-width: 320px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.testimonial-card-2025 .user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.testimonial-card-2025 .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.testimonial-card-2025 .user-name {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 3px;
+}
+
+.testimonial-card-2025 .user-desc {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.testimonial-card-2025 .rating-stars {
+  color: #f1c40f;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.testimonial-card-2025 .testimonial-text {
+  color: #34495e;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.testimonial-card-2025 .testimonial-text:before {
+  content: """;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  font-size: 2rem;
+  color: #bdc3c7;
+  font-family: serif;
+  line-height: 1;
+}
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ---------- 7. Responsive spécifique ---------- */
+@media (max-width: 768px) {
+  .s3-criteria-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .s3-comparison-container {
+    padding: 15px;
+  }
+  
+  .s3-product-card .product-card-image-container {
+    height: 200px;
+  }
+  
+  .s3-testimonial-card {
+    min-width: 100%;
+  }
+}
